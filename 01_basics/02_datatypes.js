@@ -13,6 +13,7 @@ let name = "Rahul"
 let age = 18
 let isLoggedIn = false
 let state;
+let emptySting = ""
 
 // number => 2 to power 53
 // bigint => for bigger numbers like in Stock , Reddit
@@ -27,3 +28,4 @@ let state;
 
 console.log(typeof undefined); // undefined
 console.log(typeof null); // object
+console.log(typeof emptySting); //String
