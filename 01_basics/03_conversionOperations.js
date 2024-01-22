@@ -28,3 +28,11 @@ let booleanIsLoggedIn = Boolean(IsLoggedIn);
 // null -- false
 // undefined -- false
 // -2 -- true
+
+let num = 33;
+let numString = String(num);
+// console.log(numString); --- 33
+// console.log(typeof numString); ---- string
+
+/* ==========Operations========== */
+
