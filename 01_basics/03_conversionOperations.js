@@ -35,4 +35,23 @@ let numString = String(num);
 // console.log(typeof numString); ---- string
 
 /* ==========Operations========== */
+let value = 3;
+let negValue = -value;
+// console.log(negValue);
 
+
+// console.log(1 + "2");
+// console.log("1" + 2);
+// console.log(1 + 2 + "2");
+// console.log(1 + "2" + 1 + 3);
+
+// it will do Mathematical sum until it does not strike with String from left to right
+
+
+// console.log(+true); 
+// console.log(+false);
+// console.log(+"");
+// console.log(+"Rahul");
+// console.log(typeof +"33");
+
+// + is basically Number() function and the return type is number 
