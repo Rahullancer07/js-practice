@@ -10,7 +10,7 @@ const dataUndefined = undefined;
 const dataSymbol = Symbol('1234');
 const dataBigInt = 32342329129n;
 
-// console.table([[dataString, typeof dataString] , [dataNumber, typeof dataNumber] , [dataBool, typeof dataBool] , [dataNull, typeof dataNull] , [dataUndefined, typeof dataUndefined], [dataSymbol, typeof dataSymbol], [dataBigInt, typeof dataBigInt]]);
+console.table([[dataString, typeof dataString] , [dataNumber, typeof dataNumber] , [dataBool, typeof dataBool] , [dataNull, typeof dataNull] , [dataUndefined, typeof dataUndefined], [dataSymbol, typeof dataSymbol], [dataBigInt, typeof dataBigInt]]);
 
 /*
 |    0    │   'Rahul'    │  'string'   │
@@ -37,7 +37,7 @@ const func = function(){
     console.log("Hello, from function");
 }
 
-// console.table([[heroes, typeof heroes], [student, typeof student],[func , typeof func]]);
+console.table([[heroes, typeof heroes], [student, typeof student],[func , typeof func]]);
 
 /* 
 │ 0 │ [ 'IronMan', 'SuperMan', ...] │ 'object'   │

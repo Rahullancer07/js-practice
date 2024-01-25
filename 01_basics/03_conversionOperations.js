@@ -1,10 +1,10 @@
 let number = undefined;
 
-// console.log(typeof number);
+console.log(typeof number);
 
 let valueInNumber = Number(number);
-// console.log(typeof valueInNumber);
-// console.log(valueInNumber);
+console.log(typeof valueInNumber);
+console.log(valueInNumber);
 
 // initially -- type -- Number(value) --- type(Number(value))
 // 33 -- number -- 33 -- number
@@ -19,8 +19,8 @@ let valueInNumber = Number(number);
 let IsLoggedIn = null;
 
 let booleanIsLoggedIn = Boolean(IsLoggedIn);
-// console.log(typeof booleanIsLoggedIn);
-// console.log(booleanIsLoggedIn);
+console.log(typeof booleanIsLoggedIn);
+console.log(booleanIsLoggedIn);
 
 // true -- true
 // "" -- false
@@ -31,8 +31,8 @@ let booleanIsLoggedIn = Boolean(IsLoggedIn);
 
 let num = 33;
 let numString = String(num);
-// console.log(numString); --- 33
-// console.log(typeof numString); ---- string
+console.log(numString); // --- 33
+console.log(typeof numString); // ---- string
 
 /* ==========Operations========== */
 let value = 3;
@@ -40,18 +40,18 @@ let negValue = -value;
 // console.log(negValue);
 
 
-// console.log(1 + "2");
-// console.log("1" + 2);
-// console.log(1 + 2 + "2");
-// console.log(1 + "2" + 1 + 3);
+console.log(1 + "2");
+console.log("1" + 2);
+console.log(1 + 2 + "2");
+console.log(1 + "2" + 1 + 3);
 
 // it will do Mathematical sum until it does not strike with String from left to right
 
 
-// console.log(+true); 
-// console.log(+false);
-// console.log(+"");
-// console.log(+"Rahul");
-// console.log(typeof +"33");
+console.log(+true); 
+console.log(+false);
+console.log(+"");
+console.log(+"Rahul");
+console.log(typeof +"33");
 
 // + is basically Number() function and the return type is number 
