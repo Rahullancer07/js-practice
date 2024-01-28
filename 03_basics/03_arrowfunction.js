@@ -35,6 +35,9 @@ const addNumTwo = (num1 , num2) => {
 const addNumThree = (num1, num2) => num1 + num2;
 const addNumFour = (num1 , num2) => (num1 + num2);
 
+// NOTE : if i use {} -- i have to write return keyword to return values
+
+
 console.log(addNumTwo(2,4)); // 6
 console.log(addNumThree(1,4));
 console.log(addNumFour(4,5));
