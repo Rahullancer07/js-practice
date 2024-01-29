@@ -1,0 +1,107 @@
+// Difference between Arrow Function and Regular Functions
+// -------------------------------------------
+// 1) No argument object in Arrow Function
+
+function print(){
+    console.log(arguments);
+}
+
+// print(); // [Arguments]{} 
+// print("Rahul", "Rohan"); // [Arguments] { '0': 'Rahul', '1': 'Rohan' }
+
+function printArgumentOne(){
+    console.log(arguments[1]);
+}
+
+// printArgumentOne("a", "b", "c"); // b
+// printArgumentOne("a"); // undefined
+
+const printArr = () => {
+    console.log(arguments[0]);
+}
+
+// printArr("Rahul", "Rohan"); // not working like regular function
+
+// -------------------------------------------
+
+// 2) this binding not exist in Arrow functions
+
+const obj = {
+    name : "Rahul",
+    age : 23,
+    printAge : function(){
+        console.log(this.age);
+    },
+    printDetails : function(){
+        console.log(`Name is ${this.name} and Age is ${this.age}`)
+    }
+}
+
+// obj.printAge();
+// obj.printDetails();
+const globalName = "Rahul Yadav";
+const globalAge  = 23
+const objectTwo = {
+    name : "Rohan",
+    age : 23,
+    printDetails : () => {
+        console.log(`Name is ${this.name} and Age is ${this.age}`);
+    },
+    printAge : () => {
+        console.log(this);
+    }
+}
+
+objectTwo.printDetails(); // Name is undefined and Age is undefined
+objectTwo.printAge(); 
+
+// in browser , this refers to window object in case of arrow functions
+
+
+// -----------------------------------------
+
+// 3) Arrow functions cannot be used as constructor
+
+class Animal {
+    constructor(name , numOfLegs){
+        this.name = name,
+        this.numOfLegs = numOfLegs
+    }
+
+    printInfo(){
+        console.log(`${this.name} is an animal and have ${this.numOfLegs} legs`)
+    }
+}
+
+const dog = new Animal("dog", 4);
+const human = new Animal("human" , 2);
+
+// dog.printInfo();
+// human.printInfo();
+
+
+// lets try with arrow functions
+
+// class Car {
+//     constructor = (name , price) => {
+//         this.name = name,
+//         this.price = price
+//     }
+// }
+// Cannot write , getting syntax error
+
+// --------------------------------------------
+
+// 4) Arrow functions cannot be accessed before initialization
+
+printName("Rahul");  
+
+function printName(name){
+    console.log(name);
+}
+
+printNameTwo("Rohan") // Cannot access 'printNameTwo' before initialization
+
+const printNameTwo = (name) => {
+    console.log(name);
+}
